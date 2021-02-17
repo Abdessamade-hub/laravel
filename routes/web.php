@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/register', [RegisterController::class, 'index']);
+
+
 Route::get('/home', function () {
     return view('posts.index');
 });
