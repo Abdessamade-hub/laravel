@@ -20,3 +20,8 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::get('/home', function () {
     return view('posts.index');
 });
+
+
+Route::get('/register',function(){
+	return view('posts.register');
+});
